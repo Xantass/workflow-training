@@ -1,0 +1,17 @@
+name: Tests
+
+on:
+    push:
+        branches:
+            -master
+            -dev
+    pull_request:
+        branches:
+            -master
+            -dev
+jobs:
+    hello-world:
+        runs-on: ubuntu-20.04
+        steps:
+            run: |
+                 echo 'Welcome to the Github Actions workshop !'
